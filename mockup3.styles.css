@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 30px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    color: #666;
+    margin-bottom: 2rem;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .form-group {
+    display: grid;
+    grid-template-rows: auto auto;
+  }
+
+  label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    max-height: 80px;
+  }
+
+  input,
+  select,
+  textarea {
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f7f9ff;
+  }
+
+  .form-group select {
+    appearance: none;
+    background:url('./assets/icon/down-icon.png') no-repeat 97% 50%/15px auto;
+    background-color: #f7f9ff;
+  }
+  
+  .phone-input-wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0;
+    align-items: center;
+  }
+
+  .phone-input-wrapper select {
+    border-radius: 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  .phone-input-wrapper input {
+    border-radius: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .phone-input-wrapper img {
+    margin-left: 25px;
+  }
+  
+  .country-code {
+    padding: 1rem;
+    padding-right: 1.5rem;
+    border: none;
+    font-size: 1rem;
+    background-color: #f7f9ff;
+    background: url('./assets/icon/down-icon.png') no-repeat 110% 50% / 15px auto;
+    appearance: none;
+  }
+
+  textarea {
+    resize: none;
+    height: 160px;
+  }
+
+  .textarea-group {
+    grid-row: span 2;
+  }
+
+  .button-cell {
+    grid-column: 2;
+    justify-self: end;
+  }
+
+  button {
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding-right: 60px;
+  }
+
+  button img {
+    position: absolute;
+    padding-top: 1px;
+    margin-left: 25px;
+    
+  }
+
+  button:hover {
+    background-color: #2563eb;
+  }

@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 40px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.3rem;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.4rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 0.5rem;
+    grid-column: span 2;
+}
+
+select {
+    appearance: none;
+    background:url('./assets/icon/down-icon.png') no-repeat 97% 50%/15px auto;
+}
+
+label {
+    font-weight: 400;
+}
+
+.textarea-group {
+    grid-column: span 4;
+}
+
+textarea {
+    resize: none;
+    height: 90px;
+}
+
+.file {
+    border: none;
+}
+
+button {
+    padding: 0.5rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 300;
+    background-color: #1b52e0;
+    border-radius: 0.3rem;
+    border: none;
+    grid-column: 4 / span 1;
+    
+}
